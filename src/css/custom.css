@@ -1,0 +1,59 @@
+/**
+ * Global custom CSS for BTCHide VPN documentation
+ */
+
+/* Подключаем пользовательский шрифт Vollda Bold */
+@font-face {
+  font-family: 'VolldaBold';
+  src: url('/fonts/KiyosunaSans-B-1.0.1.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Цветовая схема */
+:root {
+  --ifm-color-primary: #4db8ff;         /* небесно-голубой основной */
+  --ifm-color-primary-dark: #00a0ff;    /* чуть темнее */
+  --ifm-color-primary-darker: #008de0;
+  --ifm-color-primary-light: #80ccff;   /* чуть светлее */
+  --ifm-color-primary-lighter: #b3e0ff;
+}
+
+/* Тёмная тема (можно сделать мягкий голубой акцент) */
+[data-theme='dark'] {
+  --ifm-color-primary: #4db8ff;
+  --ifm-color-primary-dark: #0099dd;
+  --ifm-color-primary-darker: #0077bb;
+  --ifm-color-primary-light: #66cfff;
+  --ifm-color-primary-lighter: #99ddff;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+}
+
+
+.navbar-telegram-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-telegram-link::before {
+  content: '';
+  display: inline-block;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+/* Применяем VolldaBold в заголовках и везде по умолчанию */
+body {
+  font-family: 'VolldaBold', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'VolldaBold', sans-serif;
+}
